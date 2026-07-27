@@ -17,11 +17,11 @@ Accent: dusty blue or sage green
 body {
     margin: 0;
     padding: 2rem;
-    background-color: #f4efe2;
+    background-color: #dbeafe;
     background-image:
-        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
-        background-size: 20px 20px;
+            linear-gradient(rgba(122, 162, 227, 0.15) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(122, 162, 227, 0.15) 1px, transparent 1px);
+    background-size: 20px 20px;
     font-family: "Annie Use Your Telescope", cursive;
     font-weight: 400;
     font-style: normal;
@@ -41,10 +41,10 @@ nav a {
     background: azure;
     padding: 6px 16px;
     
-    border: 1px solid #ddd;
+    border: 1px solid aliceblue;
     border-bottom: none;
     border-radius: 4px 4px 0 0;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.04);
+    box-shadow: 0 -2px 5px rgba(16, 31, 73, 0.12)  
 }
 
 #hero {
@@ -67,7 +67,7 @@ section, article {
     padding: 2.5rem;
     margin: 3rem auto;
     max-width: 600px; /* ADJUST IF LOOKS BAD */
-    box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.06); 
+    box-shadow: 3px 6px 18px rgba(64, 84, 84, 0.25); 
     border-radius: 2px;
 }
 
@@ -76,27 +76,29 @@ section::before {
   content: "";
   position: absolute;
   top: -15px;
-  left: 35%;
+  left: 39%;
   width: 110px;
   height: 32px;
-  background: rgba(212, 163, 115, 0.35); /* Washi tape color */
+  background: rgba(115, 141, 212, 0.35); /* Washi tape color */
   transform: rotate(-2deg);
   backdrop-filter: blur(1px);
 }
 
 #about {
     transform: rotate(-1.2deg);
-    background: #faf8f2;
+    background:  azure;
 }
 
 #now {
     transform: rotate(1.5deg);
-    background: #fdfbf7;  
+    background: #e0f2ff;;  
 }
 
 #archive article {
     transform: rotate(-0.7deg);
-    border-left: 6px solid #d4a373;
+    border-left: 6px solid #457b9d;
+    margin-bottom: 0.5em;
+    background:#e0f2ff;
 }
 
 .currently {
@@ -105,7 +107,7 @@ section::before {
 }
 
 .currently li {
-    margin-bottom: 1 rem;
+    margin-bottom: 1rem;
     border-bottom: 1px dashed #e0e0e0;
     padding-bottom: 6px;
     font-weight: bold;
@@ -116,7 +118,7 @@ section::before {
     font-weight: 400;
     font-style: normal;
     font-size: 1.5rem;
-    color:  #1a5f7a; /* Black pen? */
+    color:  #1e3a8a; /* Black pen? */
 }
 
 .footer {
@@ -124,6 +126,7 @@ section::before {
     margin-top: 5rem;
     font-size: 0.85rem;
     opacity: 0.6;
+    font-family: "Courier Prime", monospace;
 }
 
 /* Unvisited link (default state) 
