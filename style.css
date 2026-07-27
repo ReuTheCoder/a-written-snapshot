@@ -14,29 +14,134 @@ Accent: dusty blue or sage green
     box-sizing: border-box;
 }
 
-body{
-    background-color: #FAF7F0;
-    color: #2E2E2E
-    
-
+body {
+    margin: 0;
+    padding: 2rem;
+    background-color: #f4efe2;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+        background-size: 20px 20px;
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #2b2b2b;
 }
 
-/* Unvisited link (default state) */
+nav { 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b2b2b;
+    background: azure;
+    padding: 6px 16px;
+    
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.04);
+}
+
+#hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1, h2, h3 {
+    font-family: "Courier Prime", monospace;
+    font-style: normal;
+}
+
+h1 { font-size: 3.5rem; margin-bottom: 0; font-weight: 700;}
+h2 { font-size: 2.2rem; margin-top: 0; font-weight: 700; }
+h3 {font-weight: 400; }
+
+section, article {
+    position: relative;
+    background: azure;
+    padding: 2.5rem;
+    margin: 3rem auto;
+    max-width: 600px; /* ADJUST IF LOOKS BAD */
+    box-shadow: 3px 6px 18px rgba(0, 0, 0, 0.06); 
+    border-radius: 2px;
+}
+
+/* Decorative translucent washi tape */
+section::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 35%;
+  width: 110px;
+  height: 32px;
+  background: rgba(212, 163, 115, 0.35); /* Washi tape color */
+  transform: rotate(-2deg);
+  backdrop-filter: blur(1px);
+}
+
+#about {
+    transform: rotate(-1.2deg);
+    background: #faf8f2;
+}
+
+#now {
+    transform: rotate(1.5deg);
+    background: #fdfbf7;  
+}
+
+#archive article {
+    transform: rotate(-0.7deg);
+    border-left: 6px solid #d4a373;
+}
+
+.currently {
+    list-style: none;
+    padding-left: 0;
+}
+
+.currently li {
+    margin-bottom: 1 rem;
+    border-bottom: 1px dashed #e0e0e0;
+    padding-bottom: 6px;
+    font-weight: bold;
+}
+
+.currently span { 
+    font-family: "Annie Use Your Telescope", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color:  #1a5f7a; /* Black pen? */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+/* Unvisited link (default state) 
 a:link {
   color: ; 
 }
-
-/* Visited link (already clicked) */
+/* Visited link (already clicked) 
 a:visited {
   color: ; 
 }
 
-/* Hover state (mouse pointer is over it) */
+/* Hover state (mouse pointer is over it) 
 a:hover {
   color: ; 
 }
 
-/* Active state (the exact moment it is clicked) */
+/* Active state (the exact moment it is clicked) 
 a:active {
   color: ; 
 }
+ */
