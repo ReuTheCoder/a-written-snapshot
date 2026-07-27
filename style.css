@@ -1,0 +1,42 @@
+
+/* Plan:
+ Background: cream (#FAF7F0)
+Paper: off-white (#FFFDF8)
+Notebook lines: very light blue
+Margin line: muted red
+Text: charcoal (#2E2E2E)
+Accent: dusty blue or sage green
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAF7F0;
+    color: #2E2E2E
+    
+
+}
+
+/* Unvisited link (default state) */
+a:link {
+  color: ; 
+}
+
+/* Visited link (already clicked) */
+a:visited {
+  color: ; 
+}
+
+/* Hover state (mouse pointer is over it) */
+a:hover {
+  color: ; 
+}
+
+/* Active state (the exact moment it is clicked) */
+a:active {
+  color: ; 
+}
